@@ -1,0 +1,63 @@
+image: node:20.15
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Install Dependencies
+          caches:
+            - node
+          script:
+            - yarn install
+      - step:
+          name: Run Linter
+          script:
+            - yarn lint
+      - step:
+          name: Run Tests
+          script:
+            - yarn test
+      - step:
+          name: Build
+          script:
+            - yarn build
+
+  branches:
+    main:
+      - step:
+          name: Install Dependencies
+          caches:
+            - node
+          script:
+            - yarn install
+      - step:
+          name: Run Linter
+          script:
+            - yarn lint
+      - step:
+          name: Run Tests
+          script:
+            - yarn test
+      - step:
+          name: Build
+          script:
+            - yarn build
+    dev:
+      - step:
+          name: Install Dependencies
+          caches:
+            - node
+          script:
+            - yarn install
+      - step:
+          name: Run Linter
+          script:
+            - yarn lint
+      - step:
+          name: Run Tests
+          script:
+            - yarn test
+      - step:
+          name: Build
+          script:
+            - yarn build

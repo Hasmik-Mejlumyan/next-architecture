@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /*Primary Color*/
+  --primary-50: #F3EFFC;
+  --primary-100: #BAA1F7;
+  --primary-200: #8261F5;
+  --primary-300: #663DCC;
+  --primary-400: #493380;
+
+  /*Secondary light Color*/
+  --secondary-light-50: #E3FAFC;
+  --secondary-light-100: #A4F5FC;
+  --secondary-light-200: #35DCEB;
+  --secondary-light-300: #299CA6;
+  --secondary-light-400: #016973;
+
+  /*Secondary dark Color*/
+  --secondary-dark-50: #E3F4FC;
+  --secondary-dark-100: #3FBBFC;
+  --secondary-dark-200: #0086CC;
+  --secondary-dark-300: #006599;
+  --secondary-dark-400: #004B73;
+
+  /*Neutral Color*/
+  --neutral-50: #F7F9FC;
+  --neutral-100: #EBEEF5;
+  --neutral-200: #DDE2EE;
+  --neutral-300: #CCD1E0;
+  --neutral-400: #A6ACBD;
+  --neutral-500: #898F9E;
+  --neutral-600: #5E6375;
+  --neutral-700: #525661;
+  --neutral-800: #383B42;
+  --neutral-900: #212226;
+
+  /*Basics Color*/
+  --white: #FFFFFF;
+  --black: #111111;
+
+  --white-swap: #FFFFFF;
+  --black-swap: #111111;
+
+  /*Feedback Colors*/
+  /*Information Color*/
+  --info-50: #E3FAFC;
+  --info-100: #35DCEB;
+  --info-200: #0092D4; /* Double check */
+  --info-300: #0075AA; /* Double check */
+  --info-400: #006499;
+
+  /*Success Color*/
+  --success-50: #EDFCF2;
+  --success-100: #7CDB9C;
+  --success-200: #10B949;
+  --success-300: #0C8C37;
+  --success-400: #096628;
+
+  /*Warning Color*/
+  --warning-50: #FFF9E8;
+  --warning-100: #FBDA84;
+  --warning-200: #F6BB1F;
+  --warning-300: #CA9117;
+  --warning-400: #9E670E;
+
+  /*Error Color*/
+  --error-50: #FCECEB;
+  --error-100: #E88176;
+  --error-200: #D41501;
+  --error-300: #AA1100;
+  --error-400: #800D01;
+
+  /*Tertiary Palette*/
+  /*lavendar Color*/
+  --lavendar-50: #F6F3FF;
+  --lavendar-100: #B39BF2;
+  --lavendar-200: #8A66EB;
+
+  /*Blush Color*/
+  --blush-50: #FFE8E5;
+  --blush-100: #E990B0;
+  --blush-200: #DC4C80;
+
+  /*Tangerine Color*/
+  --tangerine-50: #FFF0E5;
+  --tangerine-100: #FF954C;
+  --tangerine-200: #FA6400;
+
+  /*Citrus Color*/
+  --citrus-50: #FFF9E8;
+  --citrus-100: #F6BB1F;
+  --citrus-200: #CA9117;
+
+  /*Pistachio Color*/
+  --pistachio-50: #F2F9E6;
+  --pistachio-100: #BADF71;
+  --pistachio-200: #99D12E;
+
+  /*Azure Color*/
+  --azure-50: #E3FAFF;
+  --azure-100: #67C6E5;
+  --azure-200: #24A6D1;
+}
+
+/* Heading Text Styles */
+.text-heading-1 {
+  @apply text-[2.25rem] leading-[120%];
+}
+
+.text-heading-2 {
+  @apply text-[1.75rem] leading-[120%];
+}
+
+.text-heading-3 {
+  @apply text-[1.5rem] leading-[120%];
+}
+
+.text-heading-4 {
+  @apply text-[1.125rem] leading-[120%];
+}
+
+.text-heading-5 {
+  @apply text-[1rem] leading-[120%];
+}
+
+.text-heading-6 {
+  @apply text-[0.875rem] leading-[120%];
+}
+
+.text-heading-7 {
+  @apply text-[0.75rem] leading-[120%];
+}
+
+/* Text Styles */
+/*.text-large {*/
+/*  @apply text-[1rem] leading-[120%];*/
+/*}*/
+
+/*.text-normal {*/
+/*  @apply text-[0.875rem] leading-[120%];*/
+/*}*/
+
+/*.text-small {*/
+/*  @apply text-[0.75rem] leading-[120%];*/
+/*}*/
+
+/*Button styles*/
+.button--primary.button--solid {
+  @apply border-[0.094rem] border-primary-200 text-white bg-primary-200 hover:bg-primary-300 focus:bg-primary-200 focus:border-primary-300 disabled:bg-neutral-500;
+}
+
+.button--primary.button--outline {
+  @apply border-[0.063rem] border-primary-200 text-primary-200 hover:border-primary-300 hover:text-primary-300 focus:border-primary-300 focus:border-[0.094rem] focus:text-primary-200 disabled:bg-neutral-500 disabled:text-neutral-500;
+}
+
+.button--primary.button--text-only {
+  @apply text-primary-200 border-transparent border-[0.094rem] hover:bg-primary-50 hover:text-primary-200 focus:border-primary-300 focus:text-primary-200 disabled:text-neutral-500;
+}
+
+.button--error.button--solid {
+  @apply text-white bg-error-200 border-[0.0625rem] border-error-200 hover:bg-error-300 focus:bg-error-200 focus:border-error-100;
+}
+
+.button--error.button--outline {
+  @apply  border-[0.0625rem] border-error-200 text-error-200 hover:border-error-300 hover:text-error-300 focus:border-error-100 focus:text-error-200;
+}
+
+/*.button--outline.button--disabled {*/
+/*  @apply*/
+/*}*/
