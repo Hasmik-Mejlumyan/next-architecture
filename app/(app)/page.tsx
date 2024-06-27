@@ -3,51 +3,9 @@ import Input from '@/components/UI/Input';
 import Checkbox from '@/components/UI/Checkbox';
 import RadioButton from '@/components/UI/RadioButton';
 import Message from '@/components/UI/Message';
+import { list } from '@/utils/constants';
 
 const DashboardPage = () => {
-  const list = [
-    {
-      id: 1,
-      message: 'hello ftftftftf ftgggtdshdvhs agdjabdjsbjdbz jsbfjabsjfbajb ksfknasnfkjanfjkn',
-      owner: true,
-    },
-    {
-      id: 2,
-      message: 'hello',
-      owner: false,
-    },
-    {
-      id: 3,
-      message: 'hello',
-      owner: true,
-    },
-    {
-      id: 4,
-      message: 'hello ftftftftf ftgggtdshdvhs agdjabdjsbjdbz jsbfjabsjfbajb ksfknasnfkjanfjkn',
-      owner: true,
-    },
-    {
-      id: 5,
-      message: 'hello',
-      owner: false,
-    },
-    {
-      id: 6,
-      message: 'hello',
-      owner: true,
-    },
-    {
-      id: 7,
-      message: 'hello',
-      owner: false,
-    },
-    {
-      id: 8,
-      message: 'hello',
-      owner: true,
-    },
-  ];
-
   return (
     <div>
       <Button btnColor="primary" variant="solid">
